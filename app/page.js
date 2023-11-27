@@ -3,9 +3,16 @@ import Recipes from "./components/Recipes";
 
 export default function Home() {
 	return (
-		<main className="flex flex-col w-full items-center justify-center p-24 min-h-screen">
-			<div className="z-10 w-full max-w-5xl flex-col items-center justify-center text-sm lg:flex">
-				<div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+		<main className="flex flex-col w-full items-center justify-center p-10 min-h-screen">
+			<div className="flex flex-col mb-5 lg:flex-row lg:mb-10">
+				<Image
+					src="/ina-mo.png"
+					width={170}
+					height={170}
+					alt="Cooking ng ina mo"
+				/>
+
+				<div className="z-10 w-full max-w-5xl flex-col items-center justify-center text-sm lg:flex">
 					<Image
 						src="/logo.svg"
 						alt="Cooking Ng Ina Mo Logo"
@@ -13,8 +20,8 @@ export default function Home() {
 						height={89}
 						priority
 					/>
+					<h1 className="m-10 text-xl text-center">Yo Momma's Recipe Finder</h1>
 				</div>
-				<h1 className="m-10 text-xl text-center">Yo Momma's Recipe Finder</h1>
 			</div>
 			<div className="flex gap-3">
 				<input
