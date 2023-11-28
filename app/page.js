@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Recipes from "./components/Recipes";
 
 export default function Home() {
 	return (
@@ -32,7 +31,6 @@ export default function Home() {
 				<button className="btn btn-accent">Search</button>
 			</div>
 			<h1 className="text-xl text-center mb-5 mt-10"> Available Recipes</h1>
-			<Recipes />
 		</main>
 	);
 }
